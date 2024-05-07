@@ -1,0 +1,162 @@
+
+.login-form{
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 320px;
+}
+
+.login-label{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    color:black;
+}
+.login-label:hover{
+    color: aqua;
+}
+
+.login-input-username, .login-input-password{
+    font-size: 16px;
+    width: 20vw;
+    height: 5vh;
+
+    min-width: 200px;
+    margin: 15px;
+    padding-left: 20px;
+    color: aqua;
+    border: 3px solid grey;
+    border-radius: 8px;
+    transition: border-color 0.5s;
+    outline: none;
+    font-family: "Roboto Mono", monospace;
+}
+
+.login-input-username::placeholder, .login-input-password::placeholder{
+    color: aqua;
+}
+
+.login-input-username:hover ,  .login-input-password:hover {
+    border: 3px solid aqua;
+    transition: border-color 0.5s;
+    color: aqua;
+}
+
+
+
+.login-input-username:focus ,  .login-input-password:focus {
+    border-color: aqua;
+}
+
+.login-button{
+    padding: 8px 20px;
+    font-size: 20px;
+    border: 3px solid grey;
+    border-radius: 8px;
+    background-color: white;
+    border: 3px solid aqua;
+    color: aqua;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing:content-box;
+}
+
+.login-button:hover{
+    color: white;
+    background-color: aqua;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.sign-up-link{
+    color: aqua;
+    transition: color 0.5s;
+}
+
+.sign-up-link:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .login-input-username, .login-input-password{
+        width: 50vw;
+        height: 8vh;
+        font-size: 35px;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) and (min-height: 450px) {
+    .login-label{
+        font-size: 100px;
+    }
+    
+    .login-input-username, .login-input-password{
+        width: 40vw;
+        height: 8vh;
+        font-size: 35px;
+    }
+
+    
+    .login-button{
+        width: 15vw;
+        height: 5vh;
+        font-size: 30px;
+    }
+    
+    
+    .login-form p {
+        font-size: 35px;
+    }
+}
+
+
+
+
+@media (max-height: 450px){
+
+    .login-label{
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 2vh;
+
+    }
+
+    .login-input-username, .login-input-password{
+        font-size: 16px;
+        width: 20vw;
+        height: 5vh;
+        min-width: 100px;
+        margin: 15px;
+        padding-left: 20px;
+    }
+
+    .login-input-username:hover ,  .login-input-password:hover {
+        border: 3px solid aqua;
+        transition: border-color 0.5s;
+    }
+
+    .login-input-username:focus ,  .login-input-password:focus {
+        border-color: aqua;
+    }
+
+    .login-button{
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+}   
