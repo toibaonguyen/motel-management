@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Login from "./Login";
 import Link from 'next/link';
+import Top from "@/components/Layout/Top";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"/>
       </Head>
       <main className={`${styles.main}`}>
+        <Top></Top>
         <Link href="/Login">
           Đăng nhập
         </Link>

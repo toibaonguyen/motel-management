@@ -1,0 +1,138 @@
+.header{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    /* background-image: url('../../../public/images/Layout/Header/motel-manager.png');  */
+    display: flex;
+ 
+}
+
+.logo-image{
+    height: 90px;
+}
+
+.left-header{
+    flex: 2;
+    margin-left: 40px; 
+    height: inherit;
+    min-width: 175px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center-header{
+    height: inherit;
+    flex: 3;
+    background-color: white;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.nav-header{
+
+    height: 60px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav-item{
+    height: inherit;
+    margin: 1px;
+    padding: 10px 10px 15px;
+    color: gray;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.nav-item:hover{
+    color: black;
+    border-top: 3px solid rgb(78, 158, 232);
+    border-bottom: 3px solid rgb(78, 158, 232);
+}
+
+.right-header{
+    height: inherit;
+    flex: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 40px;
+}
+
+.nav-menu{
+    display: none;
+    position: absolute;
+    right: 0px;
+    transform: translate(-100%);
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+
+  
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+
+
+/* Mobile */
+@media (max-width: 700px) {
+    .center-header{
+        display: none;
+    }
+
+    .nav-menu{
+        display: block;
+    }
+
+    .change.nav-menu{
+        position: fixed;
+        right: 0px;
+        transform: translate(-100%);
+    }
+
+    .right-header{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .center-header{
+        justify-content: center;
+    }
+    .right-header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+

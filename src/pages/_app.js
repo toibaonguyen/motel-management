@@ -4,6 +4,10 @@ import '@/components/Login/LoginForm.css'
 import '@/components/Login/LoginImage.css'
 import './SignUp.css'
 import '@/components/SignUp/SignUpForm.css'
+import '@/components/layout/Top.css'
+
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (<>
+    <Component {...pageProps} />
+  </>);
 }
