@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: auto;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .left{
+            background-color: blue;
+            width: 65%;
+        } 
+
+        .center{
+            background-color: red;
+            width: 30%;
+        }
+
+        .right{
+            background-color: yellow;
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">This Image</div>
+        <div class="center"> Menu </div>
+        <div class="right">Hot line</div>
+    </div>
+</body>
+</html>
